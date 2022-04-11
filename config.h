@@ -71,6 +71,6 @@ static const struct arg args[] = {
     { vol_perc,     " [ %s ]",              "/dev/mixer" },
     { cpu_perc,     " [  %s% ]",           NULL },
     { ram_used,     " [  %s ]",            NULL },
-	{ datetime,     " [ %s ]",              "  %b %d %Y  %I:%M %p " },
+	{ datetime,     " [ %s ]",              " %b %d %Y  %I:%M %p" },
 };
 
