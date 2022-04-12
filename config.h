@@ -65,13 +65,17 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format                      argument */
-    { netspeed_rx,          "[  %s ",              "enp0s3" },
-    { netspeed_tx,          "/  %s ]",             "enp0s3" },
-    { battery_state,        "[ %s ",                "BAT0" },
-    { battery_perc,         "%s% ]",                "BAT0" },
-    { vol_perc,             " [ %s ]",              "/dev/mixer" },
-    { cpu_perc,             " [  %s% ]",           NULL },
-    { ram_used,             " [  %s ]",            NULL },
-	{ datetime,             " [ %s ]",              " %b %d %Y  %I:%M %p" },
+    { netspeed_rx,          " %s ",              "enp0s3" },
+    { netspeed_tx,          "/  %s ",             "enp0s3" },
+    { separator,            "|",                    NULL },
+    { battery_state,        " %s ",                "BAT0" },
+    { battery_perc,         "%s ",                "BAT0" },
+    { separator,            "|",                    NULL },
+    { vol_perc,             " %s ",              "/dev/mixer" },
+    { separator,            "|",                    NULL },
+    { cpu_perc,             "  %s ",           NULL },
+    { ram_used,             "  %s ",            NULL },
+    { separator,            "|",                    NULL },
+	{ datetime,             " %s ",              " %b %d %Y  %I:%M %p" },
 };
 
