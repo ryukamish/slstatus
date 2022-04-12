@@ -50,9 +50,9 @@
 			char *state;
 			char *symbol;
 		} map[] = {
-			{ "Charging",    "+" },
-			{ "Discharging", "-" },
-			{ "Full",        "o" },
+			{ "Charging",    "🔌" },
+			{ "Discharging", "🔋" },
+			{ "Full",        "⚡" },
 		};
 		size_t i;
 		char path[PATH_MAX], state[12];
@@ -250,3 +250,4 @@
 		return bprintf("%uh %02um", rem / 60, rem % 60);
 	}
 #endif
+
