@@ -68,7 +68,7 @@ static const struct arg args[] = {
     { netspeed_rx,          "[  %s ",              "enp0s3" },
     { netspeed_tx,          "/  %s ]",             "enp0s3" },
     { battery_state,        "[ %s ",                "BAT0" },
-    { battery_perc,         "%s% ]",             "BAT0" },
+    { battery_perc,         "%s% ]",                "BAT0" },
     { vol_perc,             " [ %s ]",              "/dev/mixer" },
     { cpu_perc,             " [  %s% ]",           NULL },
     { ram_used,             " [  %s ]",            NULL },
