@@ -73,7 +73,6 @@ static const struct arg args[] = {
     { separator,            "|",                    NULL },
     { vol_perc,             " 📢 %s ",              "/dev/mixer" },
     { separator,            "|",                    NULL },
-    { cpu_perc,             "  %s ",               NULL },
     { ram_used,             " 🧠 %s ",              NULL },
     { separator,            "|",                    NULL },
 	{ datetime,             " %s ",                 "📆 %b %d %Y 🕛 %I:%M %p" },
